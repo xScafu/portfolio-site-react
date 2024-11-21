@@ -2,7 +2,7 @@ import PresentationImage from "./PresentationImage";
 
 export default function Presentation() {
   return (
-    <div className="mt-20">
+    <div className="mt-20 p-2 select-auto">
       <h3 className="text-lg font-normal">
         <span>Hi</span>, my name is
       </h3>
@@ -11,7 +11,7 @@ export default function Presentation() {
       <div className="my-20">
         <PresentationImage />
       </div>
-      <p className="font-serif ">
+      <p className="font-serif">
         I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
         with a passion for creating dynamic and responsive web applications.{" "}
         <br />I am currently honing my skills in{" "}
