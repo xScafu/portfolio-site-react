@@ -11,7 +11,7 @@ export default function Presentation() {
       <div className="my-20">
         <PresentationImage />
       </div>
-      <p className="font-serif">
+      <p className="font-serif bg-slate-100 p-5 rounded-md">
         I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
         with a passion for creating dynamic and responsive web applications.{" "}
         <br />I am currently honing my skills in{" "}
