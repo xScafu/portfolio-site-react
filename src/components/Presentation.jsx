@@ -9,7 +9,7 @@ const popUpContainer = {
   animation: {
     opacity: 1,
     y: 0,
-    transition: { when: "beforeChildren", staggerChildren: 1, delay: 1 },
+    transition: { when: "beforeChildren", staggerChildren: 1, delay: 1.5 },
   },
 };
 
@@ -24,6 +24,8 @@ const popUp = {
     transition: { type: "tween", duration: 2, ease: [0.17, 0.67, 0.83, 0.8] },
   },
 };
+
+const shadow = "drop-shadow-md";
 
 export default function Presentation() {
   return (
