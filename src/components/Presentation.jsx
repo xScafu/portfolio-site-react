@@ -2,7 +2,7 @@ import PresentationImage from "./PresentationImage";
 
 export default function Presentation() {
   return (
-    <div className="mt-20 p-2 select-auto">
+    <div className="mt-40 p-2 select-auto">
       <h3 className="text-lg font-normal">
         <span>Hi</span>, my name is
       </h3>
