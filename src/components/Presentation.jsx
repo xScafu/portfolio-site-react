@@ -1,13 +1,48 @@
+import { motion } from "motion/react";
 import PresentationImage from "./PresentationImage";
+
+const popUpContainer = {
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+  animation: {
+    opacity: 1,
+    y: 0,
+    transition: { when: "beforeChildren", staggerChildren: 1, delay: 1 },
+  },
+};
+
+const popUp = {
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+  animation: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "tween", duration: 2, ease: [0.17, 0.67, 0.83, 0.8] },
+  },
+};
 
 export default function Presentation() {
   return (
     <div className="mt-40 p-2 select-auto">
-      <h3 className="text-lg font-normal">
-        <span>Hi</span>, my name is
-      </h3>
-      <h1 className="text-7xl font-semibold">Alessio Scarlata</h1>
-      <h2 className="text-5xl mt-5 font-medium">I build things for the web.</h2>
+      <motion.div
+        variants={popUpContainer}
+        initial="initial"
+        animate="animation"
+      >
+        <motion.h3 variants={popUp} className="text-lg font-normal">
+          <span>Hi</span>, my name is
+        </motion.h3>
+        <motion.h1 variants={popUp} className="text-7xl font-semibold">
+          Alessio Scarlata
+        </motion.h1>
+        <motion.h2 variants={popUp} className="text-5xl mt-5 font-medium">
+          I build things for the web.
+        </motion.h2>
+      </motion.div>
       <div className="my-20">
         <PresentationImage />
       </div>
