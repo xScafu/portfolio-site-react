@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { useScroll } from "motion/react";
 import PresentationImage from "./PresentationImage";
 
 const popUpContainer = {
@@ -22,7 +21,22 @@ const popUp = {
   animation: {
     opacity: 1,
     y: 0,
-    transition: { type: "tween", duration: 2, ease: [0.17, 0.67, 0.83, 0.8] },
+    transition: { type: "tween", duration: 2, ease: [0.17, 0.67, 0.83, 0.9] },
+  },
+};
+
+const scrollPop = {
+  initial: {
+    opacity: 0,
+  },
+  inView: {
+    opacity: 1,
+    transition: {
+      type: "tween",
+      duration: 1,
+      delay: 0.5,
+      ease: [0, 0.25, 0.5, 1],
+    },
   },
 };
 
@@ -45,19 +59,21 @@ export default function Presentation() {
         </motion.h2>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        variants={scrollPop}
+        initial="initial"
+        whileInView="inView"
         viewport={{ once: true, amount: 0.3 }}
-        transition={{
-          type: "tween",
-          duration: 1,
-          delay: 0.5,
-          ease: [0, 0.25, 0.5, 1],
-        }}
       >
         <div className="mt-20">
           <PresentationImage />
         </div>
+      </motion.div>
+      <motion.div
+        variants={scrollPop}
+        initial="initial"
+        whileInView="inView"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <p className="font-serif bg-slate-200 p-5 rounded-md">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
           with a passion for creating dynamic and responsive web applications.{" "}
