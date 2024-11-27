@@ -72,7 +72,7 @@ export default function Presentation() {
         variants={scrollPop}
         initial="initial"
         whileInView="inView"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <p className="font-serif bg-slate-200 p-5 rounded-md">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
