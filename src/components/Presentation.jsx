@@ -65,11 +65,11 @@ export default function Presentation() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 border border-blue-400 p-5 rounded-md mt-32"
+        className="font-serif bg-gray-50 border border-blue-400 p-5 rounded-md mt-32 drop-shadow-sm shadow-black"
       >
         <h2 className="font-bold text-3xl text-center mb-5">Why hiring me?</h2>
         <Divider></Divider>
-        <p className="mt-5">
+        <p className="my-5">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
           with a passion for creating dynamic and responsive web applications.{" "}
           <br />I am currently honing my skills in{" "}
@@ -80,6 +80,12 @@ export default function Presentation() {
           <span className="font-bold">technologies</span> to bring{" "}
           <span className="font-bold">creative ideas to life.</span>
         </p>
+        <button
+          type="button"
+          className="bg-blue-400 text-gray-50 font-sans p-2 absolute left-1/3 rounded-t-md shadow shadow-black "
+        >
+          Contact me
+        </button>
       </motion.div>
     </div>
   );
