@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import PresentationImage from "./PresentationImage";
+import { Divider } from "@mui/material";
 
 // const { scrollYProgress } = useScroll();
 
@@ -44,7 +45,7 @@ const scrollPop = {
 
 export default function Presentation() {
   return (
-    <div className="mt-40 p-2 select-auto">
+    <div className="mt-32 p-2 select-auto">
       <motion.div
         variants={popUpContainer}
         initial="initial"
@@ -53,30 +54,24 @@ export default function Presentation() {
         <motion.h3 variants={popUp} className="text-lg font-normal">
           <span>Hi</span>, my name is
         </motion.h3>
-        <motion.h1 variants={popUp} className="text-7xl font-semibold">
+        <motion.h1 variants={popUp} className="text-4xl font-semibold">
           Alessio Scarlata
         </motion.h1>
-        <motion.h2 variants={popUp} className="text-5xl mt-5 font-medium">
+        <motion.h2 variants={popUp} className="text-xl mt-1 font-medium">
           I build things for the web.
         </motion.h2>
       </motion.div>
-      <motion.div
-        variants={scrollPop}
-        initial="initial"
-        whileInView="inView"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="mt-20">
-          <PresentationImage />
-        </div>
-      </motion.div>
+
       <motion.div
         variants={scrollPop}
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
+        className="font-serif bg-gray-50 border border-blue-400 p-5 rounded-md mt-32 drop-shadow-sm shadow-black"
       >
-        <p className="font-serif bg-slate-200 p-5 rounded-md">
+        <h2 className="font-bold text-3xl text-center mb-5">Why hiring me?</h2>
+        <Divider></Divider>
+        <p className="my-5">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
           with a passion for creating dynamic and responsive web applications.{" "}
           <br />I am currently honing my skills in{" "}
@@ -87,6 +82,12 @@ export default function Presentation() {
           <span className="font-bold">technologies</span> to bring{" "}
           <span className="font-bold">creative ideas to life.</span>
         </p>
+        <button
+          type="button"
+          className="bg-blue-400 text-gray-50 font-sans p-2 absolute left-1/3 rounded-t-md shadow shadow-black "
+        >
+          Contact me
+        </button>
       </motion.div>
     </div>
   );
