@@ -82,7 +82,7 @@ export default function Presentation() {
         </p>
         <button
           type="button"
-          className="bg-blue-400 text-gray-50 font-sans p-2 absolute left-1/3 rounded-t-md shadow shadow-black "
+          className="bg-blue-400 text-gray-50 font-sans p-2 absolute left-1/3 rounded-t-md"
         >
           Contact me
         </button>
