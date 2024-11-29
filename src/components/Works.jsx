@@ -6,8 +6,10 @@ import "swiper/css/pagination";
 
 export default function Works() {
   return (
-    <div>
-      <h2>Ckeck my latest works</h2>
+    <div className="mt-32 bg-blue-400 p-3 flex flex-col -mx-3">
+      <button className="bg-gray-50 font-sans p-2 mb-3 -mt-5 rounded-b-md">
+        <h2>Ckeck my latest works</h2>
+      </button>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

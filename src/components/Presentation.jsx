@@ -67,11 +67,11 @@ export default function Presentation() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 border border-blue-400 p-5 rounded-md mt-32 drop-shadow-sm shadow-black"
+        className="font-serif bg-gray-50 border border-blue-400 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
       >
-        <h2 className="font-bold text-3xl text-center mb-5">Why hiring me?</h2>
-        <Divider></Divider>
-        <p className="my-5">
+        <h2 className="font-bold text-3xl text-center my-5">Why hiring me?</h2>
+        <Divider>Divider</Divider>
+        <p className="m-5">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
           with a passion for creating dynamic and responsive web applications.{" "}
           <br />I am currently honing my skills in{" "}
@@ -84,7 +84,7 @@ export default function Presentation() {
         </p>
         <button
           type="button"
-          className="bg-blue-400 text-gray-50 font-sans p-2 absolute left-1/3 rounded-t-md"
+          className="bg-blue-400 text-gray-50 font-sans p-2 -mb-5 rounded-t-md"
         >
           Contact me
         </button>
