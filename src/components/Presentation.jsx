@@ -69,7 +69,7 @@ export default function Presentation() {
         viewport={{ once: true, amount: 0.5 }}
         className="font-serif bg-gray-50 border border-blue-400 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
       >
-        <h2 className="font-bold text-3xl text-center my-5">Why hiring me?</h2>
+        <h2 className="font-bold text-3xl text-center my-5">Who am I?</h2>
         <Divider>Divider</Divider>
         <p className="m-5">
           I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}

@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 export default function Works() {
   return (
     <div className="mt-32 bg-blue-400 p-3 flex flex-col -mx-3">
-      <button className="bg-gray-50 font-sans p-2 mb-3 -mt-5 rounded-b-md">
-        <h2>Ckeck my latest works</h2>
+      <button className="bg-gray-50 border border-blue-400 font-sans text-lg font-bold p-2 mb-3 -mt-8 rounded-b-md">
+        <h2>Check my latest works</h2>
       </button>
       <Swiper
         effect={"coverflow"}
@@ -27,7 +27,7 @@ export default function Works() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="card bg-gray-50 image-full shadow-xl">
+          <div className="card bg-gray-50 image-full shadow-xl rounded-md overflow-hidden">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

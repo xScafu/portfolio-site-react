@@ -4,6 +4,7 @@ import Presentation from "./components/Presentation";
 import Footer from "./components/Footer";
 import Works from "./components/Works";
 import { Divider } from "@mui/material";
+import Goal from "./components/Goal";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Presentation />
         <Works />
+        <Goal />
         <div className="mt-5">
           <Divider>
             <h3>Check my socials</h3>
