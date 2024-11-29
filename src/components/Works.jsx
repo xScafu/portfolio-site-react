@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function Works() {
   return (
@@ -22,8 +22,8 @@ export default function Works() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        scrollbar={{ hide: true }}
+        modules={[EffectCoverflow, Scrollbar]}
         className="mySwiper"
       >
         <SwiperSlide>
