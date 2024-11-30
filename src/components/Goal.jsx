@@ -29,7 +29,6 @@ export default function Goal() {
         <h2 className="font-bold text-3xl text-center my-5">
           What is my goal?
         </h2>
-        <Divider>Divider</Divider>
         <p className="m-5">
           I have always been <span className="font-bold">passionate</span> about
           the structure behind a{" "}
