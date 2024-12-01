@@ -1,6 +1,4 @@
 import { motion } from "motion/react";
-import PresentationImage from "./PresentationImage";
-import { Divider } from "@mui/material";
 
 // const { scrollYProgress } = useScroll();
 
