@@ -54,7 +54,7 @@ export default function Presentation() {
         <motion.h3 variants={popUp} className="text-lg font-normal">
           <span>Hi</span>, my name is
         </motion.h3>
-        <motion.h1 variants={popUp} className="text-4xl font-semibold">
+        <motion.h1 variants={popUp} className="text-5xl font-semibold">
           Alessio Scarlata
         </motion.h1>
         <motion.h2 variants={popUp} className="text-xl mt-1 font-medium">
