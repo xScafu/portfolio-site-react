@@ -8,11 +8,16 @@ export default function Footer() {
       <h3 className="mt-10 font-medium text-2xl">Check my socials</h3>
       <div>
         <div className="text-center my-5 flex justify-evenly">
-          <a href="https://github.com/" className="hover:text-blue-950">
+          <a
+            href="https://github.com/xScafu"
+            className="hover:text-blue-950"
+            target="_blank"
+          >
             <GitHubIcon fontSize="large" />
           </a>
           <a
             href="https://www.linkedin.com/in/alessio-scarlata/"
+            target="_blank"
             className="hover:text-blue-950"
           >
             <LinkedInIcon fontSize="large" />

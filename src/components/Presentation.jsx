@@ -81,7 +81,7 @@ export default function Presentation() {
         </p>
         <button
           type="button"
-          className="bg-blue-400 text-gray-50 font-sans p-2 -mb-5 rounded-t-md"
+          className="bg-blue-400 text-gray-50 font-sans p-2 -mb-5 rounded-t-md transition ease-in-out hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
         >
           Contact me
         </button>

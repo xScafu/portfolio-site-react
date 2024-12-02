@@ -62,7 +62,7 @@ export default function Form() {
         <input
           type="submit"
           value="Submit"
-          className="my-5 btn border-none rounded p-2 bg-gray-50 text-blue-400 hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600"
+          className="my-5 btn border-none rounded p-2 transition ease-in-out bg-gray-50 text-blue-400 hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
         />
       </form>
     </div>

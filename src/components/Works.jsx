@@ -1,13 +1,23 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Scrollbar } from "swiper/modules";
+import { EffectCoverflow, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/scrollbar";
 
 export default function Works() {
+  const button = {
+    light:
+      "bg-gray-50 border-2 border-blue-400 font-sans text-lg font-bold p-2 mb-3 -mt-8 rounded-b-md",
+    hover: "hover:bg-gray-200",
+    active: "active:bg-gray-300 active:scale-95",
+    transition: "transition ease-in-out",
+  };
+
   return (
     <div className="mt-32 bg-blue-400 p-3 flex flex-col -mx-3">
-      <button className="bg-gray-50 border border-blue-400 font-sans text-lg font-bold p-2 mb-3 -mt-8 rounded-b-md">
+      <button
+        className={`${button.light} ${button.hover} ${button.active} ${button.transition}`}
+      >
         <h2>Check my latest works</h2>
       </button>
       <Swiper
