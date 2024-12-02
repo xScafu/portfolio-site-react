@@ -8,15 +8,13 @@ import store from "./app/store";
 import { Provider } from "react-redux";
 import "./index.css";
 import App from "./App.jsx";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <Routes>
-          <Route path="/" element={<App />} />
-        </Routes>
+        <App />
       </Provider>
     </BrowserRouter>
   </StrictMode>
