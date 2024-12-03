@@ -3,6 +3,7 @@ import Logo from "../ui/Logo";
 import HamburgerButton from "../ui/HamburgerButton";
 import LightDarkMode from "../ui/LightDarkMode";
 import { Link } from "react-router";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
   return (
@@ -17,6 +18,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center content-center">
         <LightDarkMode />
         <HamburgerButton />
+        <MobileMenu />
       </div>
       {/* <NavMenu /> */}
     </div>

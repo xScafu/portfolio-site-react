@@ -11,7 +11,7 @@ export default function Works() {
 
   const button = {
     light:
-      "bg-gray-50 text-center border-2 border-blue-400 font-sans text-2xl font-bold p-2 mb-3 -mt-10 rounded-b-md",
+      "bg-gray-50 text-center border-2 border-blue-400 font-sans text-2xl font-bold p-2 mb-3 -mt-10",
     hover: "hover:bg-gray-200",
     active: "active:bg-gray-300 active:scale-95",
     transition: "transition ease-in-out",

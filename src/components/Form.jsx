@@ -18,7 +18,7 @@ export default function Form() {
         })}
         action=""
         method="post"
-        className="flex flex-col"
+        className="flex flex-col text-black"
       >
         <input
           {...register("firstName", { required: true })}

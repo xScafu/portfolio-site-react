@@ -1,9 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggleDarkMode } from "../features/theme/themeSlice";
 
 export default function LightDarkMode() {
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.theme.darkMode);
 
   return (
     <label className="swap swap-rotate">

@@ -12,7 +12,7 @@ export default function Card() {
           <h2 className="card-title m-3 font-bold text-2xl">NASA APOD</h2>
           <p className="m-3 text-lg">NASA picture of the day</p>
           <div className="card-actions justify-end">
-            <button className="btn border-none btn-primary m-5 bg-blue-400 dark:bg-slate-800 text-gray-50 p-3 rounded-md">
+            <button className="btn border-none btn-primary m-5 bg-blue-400 hover:bg-blue-500 active:bg-blue-600 active:scale-95 dark:bg-slate-800  text-gray-50 p-3 rounded-md">
               Go to website
             </button>
           </div>
