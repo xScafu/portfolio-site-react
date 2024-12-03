@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 export default function Navbar() {
   return (
-    <div className="relative z-20 bg-gray-50 px-5 py-5 -mx-5 -mt-5">
+    <div className="relative z-20 bg-gray-50 dark:bg-slate-800 px-5 py-5 -mx-5 -mt-3">
       <div className="flex justify-between content-center ">
         <div className="flex items-center gap-3">
           <Link to={"/"}>

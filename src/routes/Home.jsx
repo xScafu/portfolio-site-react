@@ -12,7 +12,7 @@ export default function Home() {
       <BackgroundText />
       <div className="relative z-10">
         <Navbar />
-        <div className={`absolute z-10 top-20 right-[-12px]`}>
+        <div className={`absolute z-10 top-20 right-[-12px] overflow-hidden`}>
           <MobileMenu />
         </div>
         <Presentation />

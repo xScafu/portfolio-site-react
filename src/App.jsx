@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-gray-50 text-black p-3 overflow-x-hidden dark:bg-slate-800 dark:text-gray-50">
+      <div className="bg-gray-50 text-black p-3 dark:bg-slate-800 dark:text-gray-50 overflow-hidden">
         <AppRouter />
       </div>
     </div>

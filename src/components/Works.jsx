@@ -16,13 +16,14 @@ export default function Works() {
     active: "active:bg-gray-300 active:scale-95",
     transition: "transition ease-in-out",
     dark: "dark:bg-slate-600 dark:border-slate-500",
+    md: "md:w-2/4 md:mx-auto",
   };
 
   return (
     <div className="mt-32 bg-blue-400 dark:bg-slate-500 p-3 flex flex-col -mx-3">
       <Link
         to={"/portfolio"}
-        className={`${button.light} ${button.hover} ${button.active} ${button.transition} ${button.dark}`}
+        className={`${button.light} ${button.hover} ${button.active} ${button.transition} ${button.dark} ${button.md}`}
       >
         <h2>Check my latest works</h2>
       </Link>
@@ -40,7 +41,7 @@ export default function Works() {
         }}
         scrollbar={{ hide: true }}
         modules={[EffectCoverflow, Scrollbar]}
-        className="mySwiper"
+        className="mySwiper mb-5 md:w-3/4"
       >
         <SwiperSlide>
           <Card />

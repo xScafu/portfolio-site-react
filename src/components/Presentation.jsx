@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Divider from "@mui/material/Divider";
 
 const popUpContainer = {
   initial: {
@@ -47,13 +48,19 @@ export default function Presentation() {
         initial="initial"
         animate="animation"
       >
-        <motion.h3 variants={popUp} className="text-lg font-normal">
+        <motion.h3 variants={popUp} className="text-lg font-normal md:text-2xl">
           <span>Welcome</span>, my name is
         </motion.h3>
-        <motion.h1 variants={popUp} className="text-5xl font-semibold">
+        <motion.h1
+          variants={popUp}
+          className="text-6xl font-semibold md:text-8xl"
+        >
           Alessio Scarlata
         </motion.h1>
-        <motion.h2 variants={popUp} className="text-xl mt-1 font-medium">
+        <motion.h2
+          variants={popUp}
+          className="text-xl mt-1 font-medium md:text-4xl"
+        >
           I build things for the web.
         </motion.h2>
       </motion.div>
@@ -63,10 +70,11 @@ export default function Presentation() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
+        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black md:w-2/3 md:mx-auto"
       >
         <h2 className="font-bold text-3xl text-center my-5">Who am I?</h2>
-        <p className="m-5">
+        <Divider className="w-4/5"></Divider>
+        <p className="m-5 md:leading-7">
           Hi! My name is <span className="font-bold">Alessio Scarlata</span>,
           I’m a 31-year-old guy, and I live in a small town in the province of
           Turin, Italy. <br />

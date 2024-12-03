@@ -24,12 +24,13 @@ export default function Goal() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
+        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black md:w-2/3 md:mx-auto"
       >
         <h2 className="font-bold text-3xl text-center my-5">
           What is my goal?
         </h2>
-        <p className="m-5">
+        <Divider className="w-4/5"></Divider>
+        <p className="m-5 md:leading-7">
           I have always been <span className="font-bold">passionate</span> about
           the structure behind a{" "}
           <span className="font-bold">well-developed website</span>, one that is
