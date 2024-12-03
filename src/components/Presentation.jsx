@@ -1,7 +1,5 @@
 import { motion } from "motion/react";
 
-// const { scrollYProgress } = useScroll();
-
 const popUpContainer = {
   initial: {
     opacity: 0,
