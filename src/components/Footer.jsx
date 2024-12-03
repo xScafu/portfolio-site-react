@@ -4,13 +4,13 @@ import Form from "./Form";
 
 export default function Footer() {
   return (
-    <div className="flex justify-between flex-col items-center -mx-5 mt-32 bg-blue-400 text-gray-50">
+    <div className="flex justify-between flex-col items-center -mx-5 -mb-5 mt-32 bg-blue-400 dark:bg-slate-400 text-gray-50 dark:text-slate-800">
       <h3 className="mt-10 font-medium text-2xl">Check my socials</h3>
       <div>
         <div className="text-center my-5 flex justify-evenly">
           <a
             href="https://github.com/xScafu"
-            className="hover:text-blue-950"
+            className="hover:text-blue-950 dark:hover:text-slate-600"
             target="_blank"
           >
             <GitHubIcon fontSize="large" />
@@ -18,7 +18,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/alessio-scarlata/"
             target="_blank"
-            className="hover:text-blue-950"
+            className="hover:text-blue-950 dark:hover:text-slate-600"
           >
             <LinkedInIcon fontSize="large" />
           </a>
@@ -28,7 +28,7 @@ export default function Footer() {
           Let's keep in touch
         </h3>
         <Form />
-        <p className="font-serif font-normal text-sm text-end">
+        <p className="font-serif font-normal text-sm text-end mb-5">
           Designed & Produced by:{" "}
           <span className="font-medium">Alessio Scarlata</span>
         </p>

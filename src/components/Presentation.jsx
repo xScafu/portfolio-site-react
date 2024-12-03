@@ -50,7 +50,7 @@ export default function Presentation() {
         animate="animation"
       >
         <motion.h3 variants={popUp} className="text-lg font-normal">
-          <span>Hi</span>, my name is
+          <span>Welcome</span>, my name is
         </motion.h3>
         <motion.h1 variants={popUp} className="text-5xl font-semibold">
           Alessio Scarlata
@@ -65,11 +65,16 @@ export default function Presentation() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 border border-blue-400 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
+        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
       >
         <h2 className="font-bold text-3xl text-center my-5">Who am I?</h2>
         <p className="m-5">
-          I'm an emerging <span className="font-bold">Front-End Developer</span>{" "}
+          Hi! My name is <span className="font-bold">Alessio Scarlata</span>,
+          I’m a 31-year-old guy, and I live in a small town in the province of
+          Turin, Italy. <br />
+          I'm an emerging <span className="font-bold">
+            Front-End Developer
+          </span>{" "}
           with a passion for creating dynamic and responsive web applications.{" "}
           <br />I am currently honing my skills in{" "}
           <span className="font-bold">React.js</span> to enhance my ability to
@@ -81,7 +86,7 @@ export default function Presentation() {
         </p>
         <button
           type="button"
-          className="bg-blue-400 text-gray-50 font-sans p-2 -mb-5 rounded-t-md transition ease-in-out hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
+          className="bg-blue-400 dark:bg-slate-600 text-gray-50 font-sans p-2 -mb-5 rounded-t-md transition ease-in-out hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
         >
           Contact me
         </button>

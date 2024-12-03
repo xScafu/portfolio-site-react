@@ -24,7 +24,7 @@ export default function Goal() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 border border-blue-400 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
+        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black"
       >
         <h2 className="font-bold text-3xl text-center my-5">
           What is my goal?
