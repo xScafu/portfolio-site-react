@@ -35,14 +35,14 @@ export default function MobileMenu() {
       animate={isVisibile ? "open" : "close"}
       className="bg-blue-500 dark:bg-slate-700 h-screen"
     >
-      <ul className="p-5 relative w-screen text-start text-gray-50 z-10">
+      <ul className="p-5 relative w-screen text-start font-serif text-gray-50 z-10">
         <li className="mt-20 text-5xl">
           <Link onClick={dispatch} to={"/"}>
             {" "}
             Home
           </Link>
         </li>
-        <li className="mt-20 text-5xl">About</li>
+        <motion.li className="mt-20 text-5xl">About</motion.li>
         <li className="mt-20 text-5xl">
           <Link onClick={dispatch} to={"/portfolio"}>
             {" "}

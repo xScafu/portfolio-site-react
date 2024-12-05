@@ -69,7 +69,7 @@ export default function Presentation() {
         variants={scrollPop}
         initial="initial"
         whileInView="inView"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black md:w-2/3 md:mx-auto"
       >
         <h2 className="font-bold text-3xl text-center my-5">Who am I?</h2>
