@@ -8,14 +8,14 @@ export default function MobileMenu() {
   const dispatch = useDispatch();
   const handleOpenClose = {
     open: {
-      x: [-500, 0, 0, 0, 0, 0],
-      y: [-800, -800, 0],
+      x: 0,
+      y: [-800, 0],
       opacity: [1, 1, 1, 1, 1, 1],
       transition: { duration: 1, times: [0, 0.3, 0.4, 0.6, 0.8, 1] },
     },
     close: {
-      x: [0, 0, 0, 0, 0, -500],
-      y: [0, -800, -800],
+      x: 0,
+      y: [0, -800],
       transition: { duration: 1, times: [0, 0.3, 0.4, 0.6, 0.8, 1] },
     },
   };

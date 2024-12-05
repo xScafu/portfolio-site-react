@@ -4,7 +4,7 @@ export default function Card() {
       <div className="card card-compact bg-gray-50 dark:bg-slate-400 dark:text-black shadow-xl rounded-md overflow-hidden">
         <figure>
           <img
-            src="../public/vecteezy_web-programming-illustration-in-laptop-building-web-or_7872956-1-noBackground.png"
+            src="../vecteezy_web-programming-illustration-in-laptop-building-web-or_7872956-1-noBackground.png"
             alt="program"
           />
         </figure>
