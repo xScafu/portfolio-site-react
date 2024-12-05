@@ -3,7 +3,7 @@ import { EffectCoverflow, Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/scrollbar";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import Card from "./Card";
 
 export default function Works() {
@@ -21,12 +21,12 @@ export default function Works() {
 
   return (
     <div className="mt-32 bg-blue-400 dark:bg-slate-500 p-3 flex flex-col -mx-3">
-      <Link
+      <NavLink
         to={"/portfolio"}
         className={`${button.light} ${button.hover} ${button.active} ${button.transition} ${button.dark} ${button.md}`}
       >
         <h2>Check my latest works</h2>
-      </Link>
+      </NavLink>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

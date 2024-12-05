@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { inView, motion } from "motion/react";
 import Divider from "@mui/material/Divider";
 
 const popUpContainer = {
@@ -40,6 +40,8 @@ const scrollPop = {
   },
 };
 
+function popUpPresentation(latest) {}
+
 export default function Presentation() {
   return (
     <div className="mt-32 p-2 select-auto">
@@ -59,6 +61,7 @@ export default function Presentation() {
         </motion.h1>
         <motion.h2
           variants={popUp}
+          onUpdate={(latest) => popUpPresentation(latest)}
           className="text-xl mt-1 font-medium md:text-4xl"
         >
           I build things for the web.
