@@ -64,10 +64,7 @@ export default function Presentation() {
         </motion.h2>
       </motion.div>
 
-      <motion.div
-        className="relative z-0 overflow-hidden h-[580px]"
-        // initial={{ clipPath: "inset(0% 0% 100% 0%" }}
-      >
+      <motion.div>
         <motion.div
           variants={scrollPop}
           initial="initial"
