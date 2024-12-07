@@ -1,9 +1,9 @@
-import BackgroundText from "../components/BackgroundText";
+import BackgroundText from "../components/homepage/BackgroundText";
 import Navbar from "../components/Navbar";
-import Presentation from "../components/Presentation";
+import Presentation from "../components/homepage/Presentation";
 import Footer from "../components/Footer";
-import Works from "../components/Works";
-import Goal from "../components/Goal";
+import Works from "../components/homepage/Works";
+import Goal from "../components/homepage/Goal";
 import MobileMenu from "../components/MobileMenu";
 
 export default function Home() {

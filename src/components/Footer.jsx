@@ -24,10 +24,6 @@ export default function Footer() {
           </a>
         </div>
         <hr className="mb-5" />
-        <h3 className="my-5 text-center font-medium text-2xl">
-          Let's keep in touch
-        </h3>
-        <Form />
         <p className="font-serif font-normal text-sm text-end mb-5">
           Designed & Produced by:{" "}
           <span className="font-medium">Alessio Scarlata</span>

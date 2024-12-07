@@ -2,7 +2,10 @@ import { useDispatch, useSelector } from "react-redux";
 import CircleShape from "../ui/CircleShape";
 import { motion, useTime, useTransform } from "motion/react";
 import { NavLink } from "react-router";
-import { toggleMobileMenu } from "../features/mobileMenu/mobileMenuSlice";
+import {
+  toggleIsMobile,
+  toggleMobileMenu,
+} from "../features/mobileMenu/mobileMenuSlice";
 
 export default function MobileMenu() {
   const { isOpen, isMobile } = useSelector((state) => state.mobileMenu);
@@ -49,6 +52,9 @@ export default function MobileMenu() {
       variants={handleOpenClose}
       initial={{ opacity: 0 }}
       animate={animate()}
+      onAnimationComplete={(latest) =>
+        latest == "close" ? dispatch(toggleIsMobile()) : ""
+      }
       className={`bg-blue-500 dark:bg-slate-700 h-screen relative `}
     >
       <ul className="p-5 relative w-screen text-start font-serif text-gray-50 z-10">
@@ -58,7 +64,11 @@ export default function MobileMenu() {
             Home
           </NavLink>
         </li>
-        <li className="mt-20 text-5xl">About</li>
+        <li className="mt-20 text-5xl">
+          <NavLink onClick={() => dispatch(toggleMobileMenu())} to={"/about"}>
+            About
+          </NavLink>
+        </li>
         <li className="mt-20 text-5xl">
           <NavLink
             onClick={() => dispatch(toggleMobileMenu())}
@@ -68,7 +78,11 @@ export default function MobileMenu() {
             Portfolio
           </NavLink>{" "}
         </li>
-        <li className="my-20 text-5xl">Contact</li>
+        <li className="my-20 text-5xl">
+          <NavLink onClick={() => dispatch(toggleMobileMenu())} to={"/contact"}>
+            Contact
+          </NavLink>
+        </li>
       </ul>
       <motion.div
         style={{ rotate: rotate }}

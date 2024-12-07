@@ -11,11 +11,15 @@ export default function Menu() {
       <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/"}>
         Home
       </NavLink>
-      <NavLink>About</NavLink>
+      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/about"}>
+        About
+      </NavLink>
       <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/portfolio"}>
         Portfolio
       </NavLink>
-      <NavLink>Contact</NavLink>
+      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/contact"}>
+        Contact
+      </NavLink>
     </div>
   );
 }

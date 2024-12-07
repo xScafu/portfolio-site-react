@@ -1,8 +1,8 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import MobileMenu from "../components/MobileMenu";
-import CardContainer from "../components/CardContainer";
-import PortfolioPresentation from "../components/PortfolioPresentation";
+import CardContainer from "../components/portfolio/CardContainer";
+import PortfolioPresentation from "../components/portfolio/PortfolioPresentation";
 
 export default function Portfolio() {
   return (

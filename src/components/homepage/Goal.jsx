@@ -11,7 +11,6 @@ export default function Goal() {
       transition: {
         type: "tween",
         duration: 1,
-        delay: 0.5,
         ease: [0, 0.25, 0.5, 1],
       },
     },
@@ -24,12 +23,15 @@ export default function Goal() {
         initial="initial"
         whileInView="inView"
         viewport={{ once: true, amount: 0.5 }}
-        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center rounded-md mt-32 drop-shadow-sm shadow-black md:w-2/3 md:mx-auto"
+        className="font-serif bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center mt-32 p-10 drop-shadow-sm shadow-black md:w-2/3 md:mx-auto"
       >
         <h2 className="font-bold text-3xl text-center my-5">
           What is my goal?
         </h2>
-        <Divider className="w-4/5"></Divider>
+        <Divider
+          sx={{ backgroundColor: "white" }}
+          className="w-11/12"
+        ></Divider>
         <p className="m-5 md:leading-7">
           I have always been <span className="font-bold">passionate</span> about
           the structure behind a{" "}
