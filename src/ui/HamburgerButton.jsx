@@ -1,13 +1,19 @@
 import { Divide as Hamburger } from "hamburger-react";
 import { toggleMobileMenu } from "../features/mobileMenu/mobileMenuSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function HamburgerButton() {
+  const { isOpen, setOpen } = useSelector((state) => state.mobileMenu);
   const dispatch = useDispatch();
 
   return (
     <div>
-      <Hamburger onToggle={() => dispatch(toggleMobileMenu())} />
+      <Hamburger
+        easing="ease-in-out"
+        toggled={isOpen}
+        toggle={setOpen}
+        onToggle={() => dispatch(toggleMobileMenu())}
+      />
     </div>
   );
 }

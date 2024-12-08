@@ -40,7 +40,7 @@ export default function LightDarkMode() {
   }
 
   return (
-    <label className="swap swap-rotate">
+    <label className="swap">
       {/* this hidden checkbox controls the state */}
       <input type="checkbox" onChange={() => dispatch(toggleDarkMode())} />
       {darkModeToggle}
