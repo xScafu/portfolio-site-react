@@ -8,16 +8,48 @@ export default function Menu() {
 
   return (
     <div className="flex gap-5">
-      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/"}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            : ""
+        }
+        onClick={() => dispatch(toggleIsMobile())}
+        to={"/"}
+      >
         Home
       </NavLink>
-      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/about"}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            : ""
+        }
+        onClick={() => dispatch(toggleIsMobile())}
+        to={"/about"}
+      >
         About
       </NavLink>
-      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/portfolio"}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            : ""
+        }
+        onClick={() => dispatch(toggleIsMobile())}
+        to={"/portfolio"}
+      >
         Portfolio
       </NavLink>
-      <NavLink onClick={() => dispatch(toggleIsMobile())} to={"/contact"}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            : ""
+        }
+        onClick={() => dispatch(toggleIsMobile())}
+        to={"/contact"}
+      >
         Contact
       </NavLink>
     </div>

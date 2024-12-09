@@ -59,18 +59,39 @@ export default function MobileMenu() {
     >
       <ul className="p-5 relative w-screen text-start font-serif text-gray-50 z-10">
         <li className="mt-20 text-5xl">
-          <NavLink onClick={() => dispatch(toggleMobileMenu())} to={"/"}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-semibold underline underline-offset-4 decoration-4 decoration-gray-50"
+                : ""
+            }
+            onClick={() => dispatch(toggleMobileMenu())}
+            to={"/"}
+          >
             {" "}
             Home
           </NavLink>
         </li>
         <li className="mt-20 text-5xl">
-          <NavLink onClick={() => dispatch(toggleMobileMenu())} to={"/about"}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-semibold underline underline-offset-4 decoration-4 decoration-gray-50"
+                : ""
+            }
+            onClick={() => dispatch(toggleMobileMenu())}
+            to={"/about"}
+          >
             About
           </NavLink>
         </li>
         <li className="mt-20 text-5xl">
           <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-semibold underline underline-offset-4 decoration-4 decoration-gray-50"
+                : ""
+            }
             onClick={() => dispatch(toggleMobileMenu())}
             to={"/portfolio"}
           >
@@ -79,7 +100,15 @@ export default function MobileMenu() {
           </NavLink>{" "}
         </li>
         <li className="my-20 text-5xl">
-          <NavLink onClick={() => dispatch(toggleMobileMenu())} to={"/contact"}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-semibold underline underline-offset-4 decoration-4 decoration-gray-50"
+                : ""
+            }
+            onClick={() => dispatch(toggleMobileMenu())}
+            to={"/contact"}
+          >
             Contact
           </NavLink>
         </li>

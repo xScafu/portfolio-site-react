@@ -1,9 +1,12 @@
 import { motion } from "motion/react";
+import { useSelector } from "react-redux";
 
 export default function BackgroundText() {
+  let isVisited = useSelector((state) => state.visited.isVisited);
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={isVisited ? { opacity: 1 } : { opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
         type: "tween",

@@ -10,7 +10,7 @@ export default function TextBoxes({ children }) {
       transition: {
         type: "tween",
         duration: 1,
-        delay: 1,
+        delay: 5,
         ease: [0, 0.25, 0.5, 1],
       },
     },

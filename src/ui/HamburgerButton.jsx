@@ -9,7 +9,6 @@ export default function HamburgerButton() {
   return (
     <div>
       <Hamburger
-        easing="ease-in-out"
         toggled={isOpen}
         toggle={setOpen}
         onToggle={() => dispatch(toggleMobileMenu())}

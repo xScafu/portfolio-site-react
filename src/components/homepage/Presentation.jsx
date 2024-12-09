@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { NavLink } from "react-router";
 import TextBoxes from "../../ui/TextBoxes";
 import PresentationText from "./PresentationText";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleIsVisited } from "../../features/visited/visitedSlice";
 
 const popUpContainer = {
   initial: {
@@ -12,6 +14,10 @@ const popUpContainer = {
     opacity: 1,
     y: 0,
     transition: { when: "beforeChildren", staggerChildren: 1, delay: 1.5 },
+  },
+  visited: {
+    opacity: 1,
+    y: 0,
   },
 };
 
@@ -28,11 +34,16 @@ const popUp = {
 };
 
 export default function Presentation() {
+  let isVisited = useSelector((state) => state.visited.isVisited);
+  const dispatch = useDispatch();
+
+  console.log(isVisited);
+
   return (
     <div className="mt-28 p-2 select-auto">
       <motion.div
         variants={popUpContainer}
-        initial="initial"
+        initial={isVisited ? "visited" : "initial"}
         animate="animation"
       >
         <motion.h3 variants={popUp} className="text-lg font-normal md:text-2xl">
@@ -46,6 +57,7 @@ export default function Presentation() {
         </motion.h1>
         <motion.h2
           variants={popUp}
+          onAnimationComplete={() => dispatch(toggleIsVisited())}
           className="text-xl mt-1 font-medium md:text-4xl"
         >
           I build things for the web.
