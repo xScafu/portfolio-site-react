@@ -1,33 +1,80 @@
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { Divider } from "@mui/material";
+import Socials from "./Socials";
+import LogoVector from "../ui/LogoVector";
+import { NavLink } from "react-router";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleIsMobile } from "../features/mobileMenu/mobileMenuSlice";
 
 export default function Footer() {
+  useSelector((state) => state.mobileMenu);
+  const dispatch = useDispatch();
+
   return (
-    <div className="flex justify-between flex-col items-center -mx-5 -mb-5 mt-32 bg-blue-400 dark:bg-slate-400 text-gray-50 dark:text-slate-800">
-      <h3 className="mt-10 font-medium text-2xl">Check my socials</h3>
-      <div>
-        <div className="text-center my-5 flex justify-evenly">
-          <a
-            href="https://github.com/xScafu"
-            className="hover:text-blue-950 dark:hover:text-slate-600"
-            target="_blank"
-          >
-            <GitHubIcon fontSize="large" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alessio-scarlata/"
-            target="_blank"
-            className="hover:text-blue-950 dark:hover:text-slate-600"
-          >
-            <LinkedInIcon fontSize="large" />
-          </a>
-        </div>
-        <hr className="mb-5" />
-        <p className="font-serif font-normal text-sm text-end mb-5">
-          Designed & Produced by:{" "}
-          <span className="font-medium">Alessio Scarlata</span>
-        </p>
+    <div className="grid grid-cols-4 grid-rows-3 -mx-5 -mb-5 mt-32 bg-blue-400 dark:bg-slate-700 text-gray-50 dark:text-gray-50">
+      <div className="col-start-1 col-end-5 flex gap-5 align-middle items-center justify-center content-between mt-5 ">
+        <span className="fill-white w-16">
+          <LogoVector />
+        </span>
+        <h3 className="text-2xl font-normal">Alessio Scarlata</h3>
       </div>
+      <Socials />
+      <Divider
+        orientation="vertical"
+        variant="middle"
+        flexItem
+        sx={{ opacity: 0.6, marginY: 2, borderColor: "#f9fafb" }}
+        className="col-start-2 col-end-3 row-start-2 row-end-4"
+      />
+      <div className="flex flex-col items-end justify-center col-start-3 col-end-5 mr-8 mt-5 text-xl gap-2">
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "underline underline-offset-4 decoration-2 decoration-blue-50"
+              : ""
+          }
+          onClick={() => dispatch(toggleIsMobile())}
+          to={"/"}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => {
+            isActive
+              ? "underline underline-offset-4 decoration-2 decoration-blue-50"
+              : "";
+          }}
+          onClick={() => dispatch(toggleIsMobile())}
+          to={"/about"}
+        >
+          About
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "underline underline-offset-4 decoration-2 decoration-blue-50"
+              : ""
+          }
+          onClick={() => dispatch(toggleIsMobile())}
+          to={"/portfolio"}
+        >
+          Portfolio
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "underline underline-offset-4 decoration-2 decoration-blue-900"
+              : ""
+          }
+          onClick={() => dispatch(toggleIsMobile())}
+          to={"/contact"}
+        >
+          Contact
+        </NavLink>
+      </div>
+      <p className="font-serif font-normal text-sm text-end mb-5 col-start-3 col-end-5 row-start-3 row-end-4 mr-8 content-end">
+        Designed & Produced by:{" "}
+        <span className="font-medium">Alessio Scarlata</span>
+      </p>
     </div>
   );
 }

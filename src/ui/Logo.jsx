@@ -1,11 +1,20 @@
 import { useSelector } from "react-redux";
+import LogoVector from "./LogoVector";
 
 export default function Logo() {
   const darkMode = useSelector((state) => state.theme.darkMode);
 
   if (!darkMode) {
-    return <img src="../ASG LOGO.svg" alt="logo" className="w-12" />;
+    return (
+      <div className="w-12 fill-black">
+        <LogoVector />
+      </div>
+    );
   } else {
-    return <img src="../ASG LOGO WHITE.svg" alt="logo" className="w-12" />;
+    return (
+      <div className="w-12 fill-gray-50">
+        <LogoVector />
+      </div>
+    );
   }
 }

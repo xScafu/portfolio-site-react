@@ -26,7 +26,7 @@ export default function Works() {
         }}
         scrollbar={{ hide: true, snapOnRelease: true, enabled: true }}
         modules={[EffectCoverflow, Scrollbar]}
-        className="mySwiper mb-5 md:w-3/4"
+        className="mySwiper  mb-5 md:w-3/4"
       >
         <SwiperSlide>
           <div className="flex items-center justify-center my-32 text-gray-50">

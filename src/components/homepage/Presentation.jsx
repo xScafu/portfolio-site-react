@@ -37,8 +37,6 @@ export default function Presentation() {
   let isVisited = useSelector((state) => state.visited.isVisited);
   const dispatch = useDispatch();
 
-  console.log(isVisited);
-
   return (
     <div className="mt-28 p-2 select-auto">
       <motion.div

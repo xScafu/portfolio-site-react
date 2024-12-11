@@ -6,7 +6,7 @@ export default function Card({
 }) {
   return (
     <div className="flex justify-center">
-      <div className="card card-compact bg-gray-50 dark:bg-slate-400 dark:text-black shadow-xl rounded-md overflow-hidden w-[22rem] h-[30rem]">
+      <div className="card card-compact bg-gray-50 dark:bg-slate-400 dark:text-black shadow-xl rounded-md overflow-hidden h-[30rem]">
         <figure className="h-40">
           <img
             className="scale-105 transition ease-in-out duration-300 hover:scale-110"
