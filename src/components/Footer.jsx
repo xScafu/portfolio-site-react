@@ -10,7 +10,7 @@ export default function Footer() {
   const dispatch = useDispatch();
 
   return (
-    <div className="grid grid-cols-4 grid-rows-3 -mx-5 -mb-5 mt-32 bg-blue-400 dark:bg-slate-700 text-gray-50 dark:text-gray-50">
+    <div className="grid grid-cols-4 grid-rows-3 -mx-5 -mb-5 bg-blue-400 dark:bg-slate-700 text-gray-50 dark:text-gray-50">
       <div className="col-start-1 col-end-5 flex gap-5 align-middle items-center justify-center content-between mt-5 ">
         <span className="fill-white w-16">
           <LogoVector />

@@ -8,17 +8,17 @@ export default function Form() {
   } = useForm();
 
   const inputEffects =
-    "input bg-gray-50 w-full max-w-xs mt-5 rounded p-2 transition ease-in-out focus:outline-none focus:shadow-md dark:bg-slate-200";
+    "input bg-gray-50 w-full max-w-xs mt-5 rounded p-2 transition ease-in-out focus:outline-offset-0 dark:focus:outline-offset-1 focus:outline-blue-500 dark:focus:outline-blue-200 focus:shadow-md dark:bg-slate-200";
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <form
         onSubmit={handleSubmit((data) => {
           console.log(data);
         })}
         action=""
         method="post"
-        className="flex flex-col text-black"
+        className="flex flex-col text-black w-3/4 items-center"
       >
         <input
           {...register("firstName", { required: true })}
@@ -53,7 +53,7 @@ export default function Form() {
         <textarea
           {...register("message", { required: true })}
           aria-invalid={errors.message ? "true" : "false"}
-          className="textarea bg-gray-50 mt-5 text-black rounded p-2 transition ease-in-out focus:outline-none focus:shadow-md dark:bg-slate-200"
+          className="textarea bg-gray-50 mt-5 text-black rounded p-2 w-full transition ease-in-out focus:outline-offset-0 dark:focus:outline-offset-1 focus:outline-blue-500 dark:focus:outline-blue-200 focus:shadow-md dark:bg-slate-200"
           placeholder="Message"
         ></textarea>
         {errors.message?.type === "required" && (
@@ -62,7 +62,7 @@ export default function Form() {
         <input
           type="submit"
           value="Submit"
-          className="my-5 btn border-none rounded p-2 transition ease-in-out bg-gray-50 dark:bg-slate-800 text-blue-400 dark:text-gray-50 hover:bg-blue-500 dark:hover:bg-slate-600 hover:text-gray-50 active:bg-blue-600 active:scale-95"
+          className="my-5 btn border-none rounded px-2 w-28 transition ease-in-out bg-gray-50 dark:bg-slate-800 text-blue-400 dark:text-gray-50 hover:bg-blue-500 dark:hover:bg-slate-600 hover:text-gray-50 active:bg-blue-600 active:scale-95"
         />
       </form>
     </div>

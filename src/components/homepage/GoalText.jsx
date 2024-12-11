@@ -18,7 +18,7 @@ export default function GoalText() {
         With <span className="font-bold">sacrifice</span> and{" "}
         <span className="font-bold">dedication</span>, this milestone is getting{" "}
         <span className="font-bold">closer every day</span>, and I can't wait to
-        share my feelings and experience through websites that meet current{""}
+        share my feelings and experience through websites that meet current{" "}
         <span className="font-bold">market demands</span> in terms of both{" "}
         <span className="font-bold">functionality</span> and{" "}
         <span className="font-bold">aesthetics</span>.

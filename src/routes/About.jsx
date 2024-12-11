@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import MobileMenu from "../components/MobileMenu";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
       <h1 className="my-40 text-center text-3xl">
         SORRY, this page is under construction 🚧
       </h1>
+      <Footer />
     </div>
   );
 }

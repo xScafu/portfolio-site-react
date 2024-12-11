@@ -17,15 +17,18 @@ export default function MobileMenu() {
       y: [-800, -800, 0],
       opacity: [0, 1, 1, 1, 1, 1],
       transition: { duration: 1, times: [0, 0.3, 0.4, 0.6, 0.8, 1] },
+      visibility: "visible",
     },
     close: {
       x: [0, 0, 0, 500],
       y: [0, -800, -800],
       opacity: [1, 1, 1, 1, 1, 0],
       transition: { duration: 1, times: [0, 0.3, 0.4, 0.6, 0.8, 1] },
+      visibility: "hidden",
     },
     hidden: {
       opacity: 0,
+      visibility: "hidden",
     },
   };
 
