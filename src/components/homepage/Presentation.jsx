@@ -43,6 +43,7 @@ export default function Presentation() {
         variants={popUpContainer}
         initial={isVisited ? "visited" : "initial"}
         animate="animation"
+        className="ml-10"
       >
         <motion.h3 variants={popUp} className="text-lg font-normal md:text-2xl">
           <span>Welcome</span>, my name is
@@ -62,7 +63,7 @@ export default function Presentation() {
         </motion.h2>
       </motion.div>
 
-      <div className="flex flex-col gap-5 relative z-0">
+      <div className="flex flex-col gap-5 relative z-0 mt-32">
         <TextBoxes>
           <PresentationText />
         </TextBoxes>

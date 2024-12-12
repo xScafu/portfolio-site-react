@@ -12,7 +12,9 @@ export default function Portfolio() {
         <MobileMenu />
       </div>
       <PortfolioPresentation />
-      <CardContainer />
+      <div className="my-32">
+        <CardContainer />
+      </div>
       <Footer />
     </div>
   );

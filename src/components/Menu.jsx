@@ -11,7 +11,7 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
             : ""
         }
         onClick={() => dispatch(toggleIsMobile())}
@@ -22,7 +22,7 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
             : ""
         }
         onClick={() => dispatch(toggleIsMobile())}
@@ -33,7 +33,7 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
             : ""
         }
         onClick={() => dispatch(toggleIsMobile())}
@@ -44,7 +44,7 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500"
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
             : ""
         }
         onClick={() => dispatch(toggleIsMobile())}

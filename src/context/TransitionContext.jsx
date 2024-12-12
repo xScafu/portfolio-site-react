@@ -8,6 +8,7 @@ export const TransitionProvider = ({ children }) => {
 
   const toggleCompleted = (value) => {
     setCompleted(value);
+    window.scrollTo(0, 0);
   };
 
   return (

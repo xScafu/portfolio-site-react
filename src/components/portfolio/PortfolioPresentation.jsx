@@ -15,11 +15,14 @@ export default function PortfolioPresentation() {
         <h1 className="font-bold text-start px-5 text-4xl mt-32">
           Welcome to my portfolio
         </h1>
-        <p className="font-serif text-start text-lg mt-10 mb-32 px-5">
-          Here you can find my most significant works and my journey in creating
-          modern and responsive web applications and websites. <br /> I want to
-          thank everyone who trusted me and gave me the opportunity to bring
-          their dreams to life.
+        <p className="font-serif dark:font-light text-start text-lg mt-10 mb-32 px-5">
+          Here you can find my most{" "}
+          <span className="font-bold">significant works</span> and my journey in
+          creating <span className="font-bold">modern and responsive</span> web
+          applications and websites. <br /> I want to{" "}
+          <span className="font-bold">thank everyone</span> who trusted me and
+          gave me the opportunity{" "}
+          <span className="font-bold">to bring their dreams to life</span>.
         </p>
       </div>
       <motion.div

@@ -1,7 +1,7 @@
 import { Divider } from "@mui/material";
 import Socials from "./Socials";
 import LogoVector from "../ui/LogoVector";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleIsMobile } from "../features/mobileMenu/mobileMenuSlice";
 
@@ -38,11 +38,11 @@ export default function Footer() {
           Home
         </NavLink>
         <NavLink
-          className={({ isActive }) => {
+          className={({ isActive }) =>
             isActive
               ? "underline underline-offset-4 decoration-2 decoration-blue-50"
-              : "";
-          }}
+              : ""
+          }
           onClick={() => dispatch(toggleIsMobile())}
           to={"/about"}
         >
@@ -62,7 +62,7 @@ export default function Footer() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "underline underline-offset-4 decoration-2 decoration-blue-900"
+              ? "underline underline-offset-4 decoration-2 decoration-blue-50"
               : ""
           }
           onClick={() => dispatch(toggleIsMobile())}

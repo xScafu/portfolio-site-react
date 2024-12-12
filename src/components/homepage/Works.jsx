@@ -1,5 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Scrollbar } from "swiper/modules";
+import {
+  clamp,
+  easeIn,
+  easeOut,
+  motion,
+  useMotionValue,
+  useTime,
+  useTransform,
+} from "motion/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/scrollbar";
@@ -7,6 +16,9 @@ import "swiper/css/scrollbar";
 import Card from "../Card";
 
 export default function Works() {
+  const time = useTime();
+  const x = useTransform(time, (latest) => Math.sin(latest / 450) * 5);
+
   return (
     <div className="mt-32 bg-blue-400 dark:bg-slate-700 p-3 flex flex-col -mx-3 ">
       <h2 className=" text-center text-gray-50 font-sans text-4xl font-bold p-2 my-10">
@@ -30,7 +42,8 @@ export default function Works() {
       >
         <SwiperSlide>
           <div className="flex items-center justify-center my-32 text-gray-50">
-            <svg
+            <motion.svg
+              style={{ x }}
               className="size-20 fill-gray-50"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 25 25"
@@ -39,7 +52,7 @@ export default function Works() {
                 d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
                 data-name="Left"
               />
-            </svg>
+            </motion.svg>
             <h3 className="text-3xl ml-5">Swipe</h3>
           </div>
         </SwiperSlide>

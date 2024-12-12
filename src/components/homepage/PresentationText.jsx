@@ -5,7 +5,7 @@ export default function PresentationText() {
     <div>
       <h2 className="font-bold text-3xl text-center my-5">Who am I?</h2>
       <Divider sx={{ backgroundColor: "white" }} className="w-11/12"></Divider>
-      <p className="m-5 md:leading-7">
+      <p className="m-5 md:leading-7 dark:font-light">
         Hi! My name is <span className="font-bold">Alessio Scarlata</span>, I’m
         a 31-year-old guy, and I live in a small town in the province of Turin,
         Italy. <br />

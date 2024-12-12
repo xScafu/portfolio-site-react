@@ -5,7 +5,7 @@ export default function GoalText() {
     <div>
       <h2 className="font-bold text-3xl text-center my-5">What is my goal?</h2>
       <Divider sx={{ backgroundColor: "white" }} className="w-11/12"></Divider>
-      <p className="m-5 md:leading-7">
+      <p className="m-5 md:leading-7 dark:font-light">
         I have always been <span className="font-bold">passionate</span> about
         the structure behind a{" "}
         <span className="font-bold">well-developed website</span>, one that is

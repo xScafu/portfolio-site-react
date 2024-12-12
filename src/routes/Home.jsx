@@ -16,8 +16,11 @@ export default function Home() {
           <MobileMenu />
         </div>
         <Presentation />
+
         <Works />
-        <Goal />
+        <div className="my-36">
+          <Goal />
+        </div>
         <Footer />
       </div>
     </div>
