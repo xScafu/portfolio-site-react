@@ -66,7 +66,7 @@ export default function Presentation() {
         </motion.h2>
       </motion.div>
 
-      <div className="flex flex-col gap-5 relative z-0 mt-32 xl:mt-60">
+      <div className="flex flex-col gap-5 relative z-0 mt-32 mx-auto xl:mt-60">
         <TextBoxes>
           <PresentationText />
         </TextBoxes>
