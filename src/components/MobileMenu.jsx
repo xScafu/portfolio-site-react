@@ -76,7 +76,7 @@ export default function MobileMenu() {
           </NavLink>
         </li>
         <li className="mt-20 text-5xl">
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive
                 ? "font-semibold underline underline-offset-4 decoration-4 decoration-gray-50"
@@ -86,7 +86,7 @@ export default function MobileMenu() {
             to={"/about"}
           >
             About
-          </NavLink>
+          </NavLink> */}
         </li>
         <li className="mt-20 text-5xl">
           <NavLink

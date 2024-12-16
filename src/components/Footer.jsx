@@ -38,7 +38,7 @@ export default function Footer() {
           >
             Home
           </NavLink>
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive
                 ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-800"
@@ -48,7 +48,7 @@ export default function Footer() {
             to={"/about"}
           >
             About
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className={({ isActive }) =>
               isActive

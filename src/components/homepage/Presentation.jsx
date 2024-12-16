@@ -72,7 +72,7 @@ export default function Presentation() {
         </TextBoxes>
         <NavLink
           to={"/contact"}
-          className="bg-blue-400 dark:bg-slate-600 text-gray-50 font-sans text-xl mx-auto my-12 px-10 py-4 transition ease-in-out hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
+          className="bg-blue-400  dark:bg-slate-600 text-gray-50 font-sans text-xl mx-auto my-12 px-10 py-4 transition ease-in-out hover:bg-blue-500 hover:text-gray-50 active:bg-blue-600 active:scale-95"
         >
           Contact me
         </NavLink>

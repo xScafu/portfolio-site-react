@@ -13,5 +13,5 @@ const themeSlice = createSlice({
   },
 });
 
-export const { toggleDarkMode, themeStorage } = themeSlice.actions;
+export const { toggleDarkMode } = themeSlice.actions;
 export default themeSlice.reducer;

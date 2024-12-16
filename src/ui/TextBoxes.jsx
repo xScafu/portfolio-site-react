@@ -44,7 +44,7 @@ export default function TextBoxes({ children }) {
       onAnimationComplete={() =>
         counted < 2 ? dispatch(onAnimationCompleted()) : ""
       }
-      className="font-serif z-10 bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center w-[24rem] p-10 drop-shadow-sm shadow-black md:w-2/3 mx-auto xl:w-1/3"
+      className="font-serif z-10 bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center max-w-[24rem] p-10 drop-shadow-sm shadow-black md:w-2/3 mx-auto xl:w-1/3"
     >
       {children}
     </motion.div>

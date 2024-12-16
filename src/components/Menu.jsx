@@ -19,7 +19,7 @@ export default function Menu() {
       >
         Home
       </NavLink>
-      <NavLink
+      {/* <NavLink
         className={({ isActive }) =>
           isActive
             ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50 hover:text-blue-500"
@@ -29,7 +29,7 @@ export default function Menu() {
         to={"/about"}
       >
         About
-      </NavLink>
+      </NavLink> */}
       <NavLink
         className={({ isActive }) =>
           isActive
