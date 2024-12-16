@@ -6,13 +6,13 @@ export default function Logo() {
 
   if (!darkMode) {
     return (
-      <div className="w-12 fill-black">
+      <div className="w-12 xl:w-14 fill-black">
         <LogoVector />
       </div>
     );
   } else {
     return (
-      <div className="w-12 fill-gray-50">
+      <div className="w-12 xl:w-14 fill-gray-50">
         <LogoVector />
       </div>
     );

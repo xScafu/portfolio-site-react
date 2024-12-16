@@ -21,7 +21,7 @@ export default function Works() {
 
   return (
     <div className="mt-32 bg-blue-400 dark:bg-slate-700 p-3 flex flex-col -mx-3 ">
-      <h2 className=" text-center text-gray-50 font-sans text-4xl font-bold p-2 my-10">
+      <h2 className=" text-center text-gray-50 font-sans text-4xl xl:text-5xl font-bold p-2 my-10">
         Some of my works
       </h2>
       <Swiper
@@ -38,7 +38,7 @@ export default function Works() {
         }}
         scrollbar={{ hide: true, snapOnRelease: true, enabled: true }}
         modules={[EffectCoverflow, Scrollbar]}
-        className="mySwiper  mb-5 md:w-3/4"
+        className="mySwiper mb-5 md:w-3/4 xl:w-1/3"
       >
         <SwiperSlide>
           <div className="flex items-center justify-center my-32 text-gray-50">

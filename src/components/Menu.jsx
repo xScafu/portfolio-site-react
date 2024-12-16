@@ -7,12 +7,12 @@ export default function Menu() {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 xl:text-xl">
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
-            : ""
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50 hover:text-blue-500"
+            : "hover:text-blue-500"
         }
         onClick={() => dispatch(toggleIsMobile())}
         to={"/"}
@@ -22,8 +22,8 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
-            : ""
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50 hover:text-blue-500"
+            : "hover:text-blue-500"
         }
         onClick={() => dispatch(toggleIsMobile())}
         to={"/about"}
@@ -33,8 +33,8 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
-            : ""
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50 hover:text-blue-500"
+            : "hover:text-blue-500"
         }
         onClick={() => dispatch(toggleIsMobile())}
         to={"/portfolio"}
@@ -44,8 +44,8 @@ export default function Menu() {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50"
-            : ""
+            ? "underline underline-offset-2 decoration-2 decoration-blue-500 dark:decoration-gray-50 hover:text-blue-500"
+            : " hover:text-blue-500"
         }
         onClick={() => dispatch(toggleIsMobile())}
         to={"/contact"}

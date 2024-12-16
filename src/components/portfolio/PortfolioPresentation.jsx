@@ -10,12 +10,12 @@ export default function PortfolioPresentation() {
     clamp: false,
   });
   return (
-    <div className="text-center bg-blue-400 dark:bg-slate-600 text-gray-50 p-10 md:p-20 lg:p-40 -mx-5 relative z-0 overflow-hidden">
-      <div className="border border-gray-50 p-1 relative z-10">
-        <h1 className="font-bold text-start px-5 text-4xl mt-32">
+    <div className="text-center bg-blue-400 dark:bg-slate-600 text-gray-50 p-10 md:p-20 lg:p-40 -mx-5 relative z-0 overflow-hidden ">
+      <div className="border border-gray-50 p-1 relative z-10 xl:w-2/3 xl:mx-auto">
+        <h1 className="font-bold text-start px-5 text-4xl xl:text-6xl mt-32">
           Welcome to my portfolio
         </h1>
-        <p className="font-serif dark:font-light text-start text-lg mt-10 mb-32 px-5">
+        <p className="font-serif dark:font-light text-start text-lg xl:text-xl mt-10 mb-32 px-5">
           Here you can find my most{" "}
           <span className="font-bold">significant works</span> and my journey in
           creating <span className="font-bold">modern and responsive</span> web

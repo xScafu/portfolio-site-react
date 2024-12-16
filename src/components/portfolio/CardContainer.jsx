@@ -2,7 +2,7 @@ import Card from "../Card";
 
 export default function CardContainer() {
   return (
-    <div className="grid grid-cols-1 mx-5 gap-8 mt-32 md:grid-cols-2">
+    <div className="grid grid-cols-1 mx-5 gap-8 mt-32 md:grid-cols-2 xl:grid-cols-3">
       <Card
         cardTitle="NASA APOD"
         cardDescription="NASA Astronomy picture of the day website with only CSS and JavaScript."

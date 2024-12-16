@@ -7,7 +7,7 @@ export default function LogoTitle() {
       <NavLink to={"/"}>
         <Logo />
       </NavLink>
-      <h3 className="text-base font-normal">Alessio Scarlata</h3>
+      <h3 className="text-base font-normal xl:text-xl">Alessio Scarlata</h3>
     </div>
   );
 }

@@ -43,27 +43,30 @@ export default function Presentation() {
         variants={popUpContainer}
         initial={isVisited ? "visited" : "initial"}
         animate="animation"
-        className="ml-10"
+        className="ml-10 xl:ml-20 xl:mt-20"
       >
-        <motion.h3 variants={popUp} className="text-lg font-normal md:text-2xl">
+        <motion.h3
+          variants={popUp}
+          className="text-lg font-normal md:text-2xl xl:text-4xl"
+        >
           <span>Welcome</span>, my name is
         </motion.h3>
         <motion.h1
           variants={popUp}
-          className="text-6xl font-semibold md:text-8xl"
+          className="text-6xl font-semibold md:text-8xl xl:text-9xl"
         >
           Alessio Scarlata
         </motion.h1>
         <motion.h2
           variants={popUp}
           onAnimationComplete={() => dispatch(toggleIsVisited())}
-          className="text-xl mt-1 font-medium md:text-4xl"
+          className="text-xl mt-1 font-medium md:text-4xl xl:text-6xl"
         >
           I build things for the web.
         </motion.h2>
       </motion.div>
 
-      <div className="flex flex-col gap-5 relative z-0 mt-32">
+      <div className="flex flex-col gap-5 relative z-0 mt-32 xl:mt-60">
         <TextBoxes>
           <PresentationText />
         </TextBoxes>

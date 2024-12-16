@@ -6,7 +6,7 @@ import LogoTitle from "../ui/LogoTitle";
 
 export default function Navbar() {
   return (
-    <div className="relative z-20 bg-gray-50 dark:bg-slate-800 px-5 py-5 -mx-5 -mt-3">
+    <div className="relative z-20 bg-gray-50 dark:bg-slate-800 p-5 xl:px-20 xl:py-10 -mx-5 -mt-3">
       <div className="flex justify-between content-center ">
         <LogoTitle />
         <div className="flex justify-between items-center content-center">

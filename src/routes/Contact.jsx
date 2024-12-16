@@ -12,10 +12,7 @@ export default function Contact() {
       <div className={`absolute z-10 top-20 left-[-12px] overflow-hidden`}>
         <MobileMenu />
       </div>
-      {/* <h1 className="my-40 text-center text-3xl">
-        SORRY, this page is under construction 🚧
-      </h1> */}
-      <h3 className="mt-20 text-center font-medium text-4xl u">
+      <h3 className="mt-20 text-center font-medium text-4xl xl:text-6xl xl:mb-28 mb-10">
         Let's keep in touch
       </h3>
       <div className="mb-20">
@@ -51,7 +48,7 @@ export default function Contact() {
       <div className="bg-blue-400 dark:bg-slate-700 -mx-5 -mb-5 pt-20">
         <Form />
       </div>
-      <div className="pt-20 bg-blue-400 dark:bg-slate-700 -mx-3 p-3">
+      <div className="pt-20 bg-blue-400 dark:bg-slate-700 -m-3 p-3">
         <Divider
           sx={{ backgroundColor: "white" }}
           className="w-11/12"
