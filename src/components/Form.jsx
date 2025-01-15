@@ -1,11 +1,34 @@
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export default function Form() {
+  const formRef = useRef(null);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const sendEmail = (formData) => {
+    // Usa EmailJS per inviare i dati
+    emailjs
+      .sendForm(
+        "service_yhzbaw1",
+        "template_ftq7rbe",
+        formRef.current, // Ref del form
+        "vri7e3_B5RDCmyr3_"
+      )
+      .then(
+        () => {
+          alert("Email inviata con successo! Grazie per avermi contattato!");
+        },
+        () => {
+          alert("Errore nell'invio dell'email. Riprova.");
+        }
+      );
+  };
 
   const inputEffects =
     "input bg-gray-50 w-full max-w-xs xl:max-w-md mt-5 rounded p-2 transition ease-in-out focus:outline-offset-0 dark:focus:outline-offset-1 focus:outline-blue-500 dark:focus:outline-blue-200 focus:shadow-md dark:bg-slate-200";
@@ -13,8 +36,9 @@ export default function Form() {
   return (
     <div className="flex flex-col items-center">
       <form
+        ref={formRef}
         onSubmit={handleSubmit((data) => {
-          console.log(data);
+          sendEmail(data);
         })}
         action=""
         method="post"

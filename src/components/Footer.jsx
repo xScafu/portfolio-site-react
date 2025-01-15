@@ -30,8 +30,8 @@ export default function Footer() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-800"
-                : "hover:text-blue-950 dark:hover:text-slate-800"
+                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-950"
+                : "hover:text-blue-950 dark:hover:text-slate-950"
             }
             onClick={() => dispatch(toggleIsMobile())}
             to={"/"}
@@ -52,8 +52,8 @@ export default function Footer() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-800"
-                : "hover:text-blue-950 dark:hover:text-slate-800"
+                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-950"
+                : "hover:text-blue-950 dark:hover:text-slate-950"
             }
             onClick={() => dispatch(toggleIsMobile())}
             to={"/portfolio"}
@@ -63,8 +63,8 @@ export default function Footer() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-800"
-                : "hover:text-blue-950 dark:hover:text-slate-800"
+                ? "underline underline-offset-4 decoration-2 decoration-blue-50 hover:text-blue-950 dark:hover:text-slate-950"
+                : "hover:text-blue-950 dark:hover:text-slate-950"
             }
             onClick={() => dispatch(toggleIsMobile())}
             to={"/contact"}

@@ -5,13 +5,11 @@ export default function LightDarkMode() {
   let checkDarkMode = useSelector((state) => state.theme);
   const dispatch = useDispatch();
 
-  let swapSun;
-  let swapMoon;
   let darkModeToggle;
 
   let sunIcon = (
     <svg
-      className={`${swapSun} h-10 w-10 fill-gray-50`}
+      className={` h-10 w-10 fill-gray-50 hover:fill-yellow-400`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -21,7 +19,7 @@ export default function LightDarkMode() {
 
   let moonIcon = (
     <svg
-      className={`${swapMoon} h-10 w-10 fill-black`}
+      className={`h-10 w-10 fill-black hover:fill-blue-800`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -31,12 +29,8 @@ export default function LightDarkMode() {
 
   if (checkDarkMode.darkMode == true) {
     darkModeToggle = sunIcon;
-    swapSun = "swap-off";
-    swapMoon = "swap-on";
   } else {
     darkModeToggle = moonIcon;
-    swapSun = "swap-on";
-    swapMoon = "swap-off";
   }
 
   return (

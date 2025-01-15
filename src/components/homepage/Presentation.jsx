@@ -1,9 +1,10 @@
-import { motion } from "motion/react";
+import { motion, useScroll } from "motion/react";
 import { NavLink } from "react-router";
 import TextBoxes from "../../ui/TextBoxes";
 import PresentationText from "./PresentationText";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleIsVisited } from "../../features/visited/visitedSlice";
+import { useRef } from "react";
 
 const popUpContainer = {
   initial: {
@@ -29,7 +30,7 @@ const popUp = {
   animation: {
     opacity: 1,
     y: 0,
-    transition: { type: "tween", duration: 2, ease: [0.17, 0.67, 0.83, 0.9] },
+    transition: { type: "ease", duration: 2, ease: [0.17, 0.67, 0.83, 0.9] },
   },
 };
 

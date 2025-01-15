@@ -9,7 +9,9 @@ export default function Contact() {
   return (
     <div>
       <Navbar />
-      <div className={`absolute z-10 top-20 left-[-12px] overflow-hidden`}>
+      <div
+        className={`absolute z-10 top-20 left-[-12px] overflow-hidden lg:hidden`}
+      >
         <MobileMenu />
       </div>
       <h3 className="mt-20 text-center font-medium text-4xl xl:text-6xl xl:mb-28 mb-10">

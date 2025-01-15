@@ -27,7 +27,6 @@ export default function TextBoxes({ children }) {
       transition: {
         type: "tween",
         duration: 1,
-        delay: 5,
         ease: [0, 0.25, 0.5, 1],
       },
     },
@@ -40,11 +39,11 @@ export default function TextBoxes({ children }) {
       variants={scrollPop}
       initial={isVisited && counted === 2 ? "visited" : "initial"}
       whileInView="inView"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.6 }}
       onAnimationComplete={() =>
         counted < 2 ? dispatch(onAnimationCompleted()) : ""
       }
-      className="font-serif z-10 bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center max-w-[24rem] p-10 drop-shadow-sm shadow-black md:w-2/3 mx-auto xl:w-1/3"
+      className="font-serif z-10 bg-gray-50 dark:bg-slate-800 border border-blue-400 dark:border-blue-200 flex flex-col items-center max-w-2/3 p-10 drop-shadow-sm shadow-black md:w-2/3 mx-auto xl:w-1/3"
     >
       {children}
     </motion.div>
