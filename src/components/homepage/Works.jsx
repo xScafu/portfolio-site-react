@@ -58,6 +58,14 @@ export default function Works() {
         </SwiperSlide>
         <SwiperSlide>
           <Card
+            cardTitle="Stefania Mancuso"
+            cardDescription="Stefania Mancuso's webpage. Singer. Used GSAP and Motion (former Framer Motion) for animations and Redux for state managment."
+            cardImg="../Stefania_Mancuso.png"
+            cardLink="https://sito-stefania-mancuso.vercel.app/"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card
             cardTitle="NASA APOD"
             cardDescription="NASA Astronomy picture of the day website"
             cardImg="../NASA_APOD.png"
