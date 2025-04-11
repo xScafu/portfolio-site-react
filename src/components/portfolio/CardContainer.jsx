@@ -7,7 +7,7 @@ export default function CardContainer() {
         cardTitle="Stefania Mancuso"
         cardDescription="Stefania Mancuso's webpage. Singer. Used GSAP and Motion (former Framer Motion) for animations and Redux for state managment."
         cardImg="../Stefania_Mancuso.png"
-        cardLink="https://sito-stefania-mancuso.vercel.app/"
+        cardLink="https://www.stefaniamancuso.it/"
       />
       <Card
         cardTitle="NASA APOD"
