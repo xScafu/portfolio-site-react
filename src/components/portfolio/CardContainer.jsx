@@ -4,6 +4,12 @@ export default function CardContainer() {
   return (
     <div className="grid grid-cols-1 mx-5 gap-8 mt-32 md:grid-cols-2 xl:grid-cols-3">
       <Card
+        cardTitle="Photographer Template"
+        cardDescription="A template for a photographer' landing page website. Used React with some of his most famous libreries and Tailwind CSS for the UI. Used AI as support."
+        cardImg="../Photographer_template.png"
+        cardLink="https://photographer-template-ten.vercel.app/"
+      />
+      <Card
         cardTitle="Stefania Mancuso"
         cardDescription="Stefania Mancuso's webpage. Singer. Used GSAP and Motion (former Framer Motion) for animations and Redux for state managment."
         cardImg="../Stefania_Mancuso.png"
